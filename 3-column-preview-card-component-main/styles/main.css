@@ -1,0 +1,182 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+  --H-font: 700;
+  --L-font: 400;
+  --font-size: 15px;
+}
+
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+body {
+  background: ghostwhite;
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 100% 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cards {
+  display: grid;
+  align-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.sedans {
+  background: var(--Bright-orange);
+  padding: 30px;
+  grid-template-rows: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.cards .sedans .heading {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--Very-light-gray);
+  padding: 2rem 0;
+  font-weight: var(--H-font);
+}
+
+.cards .sedans .text {
+  font-family: 'Big Shoulders Display' , sans-serif;
+  width: 90%;
+  padding: 0 2rem 2rem 0;
+  color: var(--Transparent-white);
+  font-weight: var(--H-font);
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.cards .sedans .btn {
+  text-align: center;
+  border: none;
+  background: var(--Very-light-gray);
+  padding: 20px;
+  border-radius: 999px;
+  color: var(--Bright-orange);
+  font-weight: var(--H-font);
+}
+
+.cards .sedans .btn:active {
+  background: transparent;
+  border: 3px solid var(--Very-light-gray);
+  color:  var(--Very-light-gray);
+}
+
+.suvs {
+  background: var(--Dark-cyan);
+  padding: 30px;
+  grid-template-rows: auto;
+}
+
+.cards .suvs .heading {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--Very-light-gray);
+  padding: 2rem 0;
+  font-weight: var(--H-font);
+}
+
+.cards .suvs .text {
+  font-family: 'Big Shoulders Display' , sans-serif;
+  width: 90%;
+  padding: 0 2rem 2rem 0;
+  color: var(--Transparent-white);
+  font-weight: var(--H-font);
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.cards .suvs .btn {
+  text-align: center;
+  border: none;
+  background: var(--Very-light-gray);
+  padding: 20px;
+  border-radius: 999px;
+  color: var(--Dark-cyan);
+  font-weight: var(--H-font);
+}
+
+.cards .suvs .btn:active {
+  background: transparent;
+  border: 3px solid var(--Very-light-gray);
+  color:  var(--Very-light-gray);
+}
+
+.luxury {
+  background: var(--Very-dark-cyan);
+  padding: 30px;
+  grid-template-rows: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.cards .luxury .heading {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--Very-light-gray);
+  padding: 2rem 0;
+  font-weight: var(--H-font);
+}
+
+.cards .luxury .text {
+  font-family: 'Big Shoulders Display', sans-serif;
+  width: 90%;
+  padding: 0 2rem 2rem 0;
+  color: var(--Transparent-white);
+  font-weight: var(--H-font);
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.cards .luxury .btn {
+  text-align: center;
+  border: none;
+  background: var(--Very-light-gray);
+  padding: 20px;
+  border-radius: 999px;
+  color: var(--Very-dark-cyan);
+  font-weight: var(--H-font);
+}
+
+.cards .luxury .btn:active {
+  background: transparent;
+  border: 3px solid var(--Very-light-gray);
+  color: var(--Very-light-gray);
+}
+
+@media (min-width: 768px) {
+  body {
+  background: ghostwhite;
+  font-family: 'Lexend Deca', sans-serif;
+  }
+  .cards {
+    grid-template-areas: 
+    "sedas suvs luxury";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -31%;
+  }
+  .cards 
+  .suvs, 
+  .luxury, 
+  .sedans {
+    width: 240px;
+    height: 450px;
+  }
+  .sedans {
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
