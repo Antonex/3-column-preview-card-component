@@ -154,8 +154,9 @@ body {
 
 @media (min-width: 768px) {
   body {
-  background: ghostwhite;
-  font-family: 'Lexend Deca', sans-serif;
+    background: ghostwhite;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 3% 0;
   }
   .cards {
     grid-template-areas: "sedas suvs luxury";
