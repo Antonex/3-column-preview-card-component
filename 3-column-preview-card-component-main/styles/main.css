@@ -158,13 +158,9 @@ body {
   font-family: 'Lexend Deca', sans-serif;
   }
   .cards {
-    grid-template-areas: 
-    "sedas suvs luxury";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-left: -31%;
+    grid-template-areas: "sedas suvs luxury";
+    justify-content: center;
+    align-content: center;
   }
   .cards 
   .suvs, 
